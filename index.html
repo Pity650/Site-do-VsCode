@@ -8,17 +8,17 @@
 <body>
     <form action="" method="post">
         <p>Digite o seu nome:</p>
-        <input type="text" name="Nome" placeholder="Nome e Sobrenome"> 
+        <input type="text" name="Nome" placeholder="Nome e Sobrenome" required> 
         <p>Digite seu email</p>
-        <input type="email" name="Email" placeholder="E-mail" value="@escola.pr.gov.br"> 
+        <input type="email" name="Email" placeholder="E-mail" value="@escola.pr.gov.br" required> 
         <p>Digite o seu número de celular</p>
-        <input type="number" name="Telefone" placeholder="(dd) xx xxxx-xxxx">
+        <input type="number" name="Telefone" placeholder="(dd) xx xxxx-xxxx" required>
         <p>Você trabalha?</p>
         <input type="radio"name="trabalho" value="Sim"> Com certeza 
         <input type="radio"name="trabalho" value="Não" checked> Sem certeza <br>
         <input type="checkbox" name="novidades" id=""> Gostaria de aceitar as notificações sobre novidades da loja? <br>
         <p>Escolha o seu estado para sua entrega:</p>
-        <select name="estado" id="">
+        <select name="estado" id="" required>
             <option value="1">Acre</option>
             <option value="1">Paraná</option>
             <option value="1">São Paulo</option>
@@ -28,6 +28,8 @@
             <input type="text" name="Estado" placeholder="Outro estado"> 
             <h1>Reporte seu problema</h1> 
             <textarea name="Reporte seu problema" id=""></textarea>
+            <br>
+            <input type="checkbox" name="">
         </select>
     </form>
 </body>
